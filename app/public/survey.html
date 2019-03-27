@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class='row header'>
+        <div class='col-md-2'></div>
+        <div class='col-md-8'>
+            <div class="jumbotron jumbotron-fluid text-center">
+                <div class="container">
+                    <h1 class="display-4">Survey Questions</h1>
+                    <p class="lead">Take a few minutes to answer a brief survey, then you're on your way to new
+                        friendships!</p>
+                    <i class="fas fa-poll-h fa-7x"></i>
+                    <a href="./"><i class="fas fa-home fa-7x"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class='col-md-2'></div>
+    </div>
+
+    <div class='row about'>
+        <div class='col-md-2'></div>
+        <div class='col-md-8'>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Name (Required)</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Link to Photo Image (Required)</label>
+                    <input type="text" class="form-control" id="imageLink" placeholder="Enter Link">
+                </div>
+            </form>
+        </div>
+        <div class='col-md-2'></div>
+    </div>
+    <hr>
+    <div class='row questions'>
+        <div class='col-md-2'></div>
+        <div class='col-md-8'>
+            <form id="survey">
+                <h2>Question 1</h2>
+                <h6>Your mind is always buzzing with unexplored ideas and plans.</h6>
+                <label><input type="checkbox" value="1" name="choice"> 1</label>
+                <label><input type="checkbox" value="2" name="choice"> 2</label>
+                <label><input type="checkbox" value="3" name="choice"> 3</label>
+                <label><input type="checkbox" value="4" name="choice"> 4</label>
+                <label><input type="checkbox" value="5" name="choice"> 5</label>
+
+                <h2>Question 2</h2>
+                <h6>Generally speaking, you rely more on your experience than your imagination.</h6>
+                <label><input type="checkbox" value="1" name="choice"> 1</label>
+                <label><input type="checkbox" value="2" name="choice"> 2</label>
+                <label><input type="checkbox" value="3" name="choice"> 3</label>
+                <label><input type="checkbox" value="4" name="choice"> 4</label>
+                <label><input type="checkbox" value="5" name="choice"> 5</label>
+
+                <h2>Question 3</h2>
+                <h6>You find it easy to stay relaxed and focused even when there is some pressure.</h6>
+                <label><input type="checkbox" value="1" name="choice"> 1</label>
+                <label><input type="checkbox" value="2" name="choice"> 2</label>
+                <label><input type="checkbox" value="3" name="choice"> 3</label>
+                <label><input type="checkbox" value="4" name="choice"> 4</label>
+                <label><input type="checkbox" value="5" name="choice"> 5</label>
+
+                <h2>Question 4</h2>
+                <h6>You rarely do something just out of sheer curiosity.</h6>
+                <label><input type="checkbox" value="1" name="choice"> 1</label>
+                <label><input type="checkbox" value="2" name="choice"> 2</label>
+                <label><input type="checkbox" value="3" name="choice"> 3</label>
+                <label><input type="checkbox" value="4" name="choice"> 4</label>
+                <label><input type="checkbox" value="5" name="choice"> 5</label>
+
+                <h2>Question 5</h2>
+                <h6>People can rarely upset you.</h6>
+                <label><input type="checkbox" value="1" name="choice"> 1</label>
+                <label><input type="checkbox" value="2" name="choice"> 2</label>
+                <label><input type="checkbox" value="3" name="choice"> 3</label>
+                <label><input type="checkbox" value="4" name="choice"> 4</label>
+                <label><input type="checkbox" value="5" name="choice"> 5</label>
+
+                <h2>Question 6</h2>
+                <h6>It is often difficult for you to relate to other people’s feelings.</h6>
+                <label><input type="checkbox" value="1" name="choice"> 1</label>
+                <label><input type="checkbox" value="2" name="choice"> 2</label>
+                <label><input type="checkbox" value="3" name="choice"> 3</label>
+                <label><input type="checkbox" value="4" name="choice"> 4</label>
+                <label><input type="checkbox" value="5" name="choice"> 5</label>
+
+                <h2>Question 7</h2>
+                <h6>In a discussion, truth should be more important than people’s sensitivities.</h6>
+                <label><input type="checkbox" value="1" name="choice"> 1</label>
+                <label><input type="checkbox" value="2" name="choice"> 2</label>
+                <label><input type="checkbox" value="3" name="choice"> 3</label>
+                <label><input type="checkbox" value="4" name="choice"> 4</label>
+                <label><input type="checkbox" value="5" name="choice"> 5</label>
+
+                <h2>Question 8</h2>
+                <h6>You rarely get carried away by fantasies and ideas.</h6>
+                <label><input type="checkbox" value="1" name="choice"> 1</label>
+                <label><input type="checkbox" value="2" name="choice"> 2</label>
+                <label><input type="checkbox" value="3" name="choice"> 3</label>
+                <label><input type="checkbox" value="4" name="choice"> 4</label>
+                <label><input type="checkbox" value="5" name="choice"> 5</label>
+
+                <h2>Question 9</h2>
+                <h6>You think that everyone’s views should be respected regardless of whether they are supported by
+                    facts or not. </h6>
+                <label><input type="checkbox" value="1" name="choice"> 1</label>
+                <label><input type="checkbox" value="2" name="choice"> 2</label>
+                <label><input type="checkbox" value="3" name="choice"> 3</label>
+                <label><input type="checkbox" value="4" name="choice"> 4</label>
+                <label><input type="checkbox" value="5" name="choice"> 5</label>
+
+
+                <h2>Question 10</h2>
+                <h6>You feel more energetic after spending time with a group of people.</h6>
+                <label><input type="checkbox" value="1" name="choice"> 1</label>
+                <label><input type="checkbox" value="2" name="choice"> 2</label>
+                <label><input type="checkbox" value="3" name="choice"> 3</label>
+                <label><input type="checkbox" value="4" name="choice"> 4</label>
+                <label><input type="checkbox" value="5" name="choice"> 5</label>
+            </form>
+            <div class='col-md-2'></div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <br>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+
+        // Here we grab the form elements
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photo: $("#imageLink").val().trim(),
+
+        };
+
+        var score = [];
+        $.each($("input[name='choice']:checked"), function () {
+            score.push($(this).val());
+        })
+
+        var nums = score.map(Number);
+        var intNum = parseInt(nums);
+        newFriend.scores = intNums;
+
+        console.log(newFriend);
+        console.log(nums);
+
+        $.post("/api/friends", newFriend,
+            function (data) {
+
+                alert('Your new friend is on the way!')
+                $("#name").val("");
+                $("#imageLink").val("");
+                $('input[type="checkbox"]').prop('checked', false);
+
+            });
+    });
+</script>
